@@ -20,7 +20,7 @@ class LoginPage extends StatelessWidget {
             onTap: ()async{
               bool result = await WalletController().walletConnect();
               if(result) {
-                Get.to(const HomePage());
+                Get.to(HomePage());
               } else {
                 Get.snackbar('Error', 'Error');
               }
